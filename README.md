@@ -7,6 +7,8 @@ A simple, local-first Kanban board manager for macOS 14+.
 
 ![Just Kanban](screenshots/main.png)
 
+**Video preview**
+
 [![Watch demo on YouTube](https://img.youtube.com/vi/gNh9MHnK6lk/maxresdefault.jpg)](https://www.youtube.com/watch?v=gNh9MHnK6lk)
 
 ## I wanted a Kanban app that was actually simple.
