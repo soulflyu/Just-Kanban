@@ -1,0 +1,11 @@
+# macOS
+*.app
+*.dmg
+*.zip
+*.sha256
+
+# Ignore symlinks from build
+.just-sign
+
+# Private repo artifacts
+.DS_Store

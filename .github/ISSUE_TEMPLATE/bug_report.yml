@@ -1,0 +1,67 @@
+name: Bug Report
+description: Report something that isn't working correctly
+title: "[Bug] "
+labels: [bug]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please fill out the template below.
+  - type: dropdown
+    id: macos-version
+    attributes:
+      label: macOS Version
+      description: What version of macOS are you running?
+      options:
+        - macOS 14 (Sonoma)
+        - macOS 15 (Sequoia)
+        - macOS 16 (Ventura) or newer
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Just Kanban Version
+      description: Found in the app menu → About Just Kanban, or in the release filename.
+      placeholder: "e.g., v1.0.0, or JustKanban-v1.0.0-arm64.dmg"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Exact steps to trigger the bug
+      placeholder: |
+        1. Open the app
+        2. Create a new board named "Test"
+        3. Add a card to column "To Do"
+        4. Drag the card to another column
+        5. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happens
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console Output / Crash Log
+      description: Any error messages from Console.app (Help → Open Console)
+      placeholder: "Copy any relevant error output here"
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Screenshots, related settings, or anything else relevant
